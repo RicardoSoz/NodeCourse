@@ -1,8 +1,9 @@
-//File System
-const fs = require('fs');
+const add = require('./utils')
 
-fs.writeFileSync('notes.txt', 'This file was created by Node.js!')
+const name = 'Ricardo'
 
- //Challenged: Append a message to notes.txt
+const sum = add.add (2, 2)
 
- fs.appendFileSync('notes.txt', ' Appended text for the challenge')
+console.log(name)
+console.log(add.name2)
+console.log(sum)
