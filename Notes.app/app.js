@@ -3,14 +3,8 @@ const chalk = require('chalk')
 const add = require('./utils')
 
 
-const name = 'Ricardo'
+const command = process.argv[2]
 
-const sum = add.add (2, 2)
-
-console.log(name)
-console.log(add.name2)
-console.log(sum)
-
-console.log(chalk.green.bold(validator.isEmail('Ricardo@mail.com')))
-
-console.log(chalk.red.bold(validator.isEmail('Ricardo@mail.com')))
+if(command === 'hola'){
+    console.log(chalk.green.bold("Hola"))
+}
